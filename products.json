@@ -45,5 +45,62 @@
         "name": "dell gaming4",
         "price": 802,
         "company": "dell"
+    },
+    {
+        "name": "iphone5",
+        "price": 154,
+        "featured": true,
+        "company": "apple"
+    },
+    {
+        "name": "iphone7",
+        "price": 1154,
+        "featured": true,
+        "company": "apple"
+    },
+    {
+        "name": "watch30",
+        "price": 202,
+        "company": "apple"
+    },
+    {
+        "name": "watch20",
+        "price": 302,
+        "company": "apple"
+    },
+    {
+        "name": "s5",
+        "price": 400,
+        "company": "samsung"
+    },
+    {
+        "name": "dell inspiron3000",
+        "price": 501,
+        "company": "dell"
+    },
+    {
+        "name": "mi50",
+        "price": 701,
+        "company": "mi"
+    },
+    {
+        "name": "mi5",
+        "price": 503,
+        "company": "mi"
+    },
+    {
+        "name": "dell inspiron",
+        "price": 802,
+        "company": "dell"
+    },
+    {
+        "name": "mi15",
+        "price": 503,
+        "company": "mi"
+    },
+    {
+        "name": "dell inspiron3500",
+        "price": 802,
+        "company": "dell"
     }
 ]
