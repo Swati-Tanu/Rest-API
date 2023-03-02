@@ -37,6 +37,8 @@ Sort: /api/products?sort=-price
 
 Filter: /api/products?select=price
 
+Limit: /api/products?limit=3
+
 ## Demo
 
 A short video demo of the complete project:
