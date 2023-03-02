@@ -3,6 +3,7 @@ const Product = require("../models/products")
 const getAllProducts = async (req,res) => {
     const {company, name, featured, sort, select} = req.query;
     const queryObject = {};
+
 //Query
     if(company){
         queryObject.company = company;
@@ -17,6 +18,7 @@ const getAllProducts = async (req,res) => {
     }
 
     let apiData = Product.find(queryObject);
+
 //Sort
     if(sort){
         // let sortFix = sort.replace(","," ");
@@ -24,6 +26,7 @@ const getAllProducts = async (req,res) => {
         // queryObject.sort = sortFix;
         apiData = apiData.sort(sortFix);
     }
+    
 //Select
     if(select){
         // let selectFix = select.replace(","," ");
