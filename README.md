@@ -32,7 +32,9 @@ The REST API to the example app is described below.
 
 Eg; 
 Search: /api/products?name=iphone
+
 Sort: /api/products?sort=-price
+
 Filter: /api/products?select=price
 
 ## Demo
