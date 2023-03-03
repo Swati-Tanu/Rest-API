@@ -32,13 +32,21 @@ The REST API to the example app is described below.
 
 Eg; 
 Search: /api/products?name=iphone
+
 Sort: /api/products?sort=-price
+
 Filter: /api/products?select=price
+
+Limit: /api/products?limit=3
 
 ## Demo
 
 A short video demo of the complete project:
 
+
+
+
+https://user-images.githubusercontent.com/112818778/222410169-9e8b9bba-c6e6-403d-b79a-cb347a754479.mp4
 
 
 
