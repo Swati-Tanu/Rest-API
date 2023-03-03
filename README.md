@@ -3,7 +3,7 @@
 This is REST API example related to data about mobile phones. The entire application is contained within the `index.js` file. This is made using Express.js, Mongoose and MongoDB.
 
 ## Getting Started
-#### Since this is an example project, I'd encourage you to clone and rename this project to use for your purposes. It's a good starter boilerplate. Or you can simple use the deployed link mentioned below.
+#### Since this is an example project, I'd encourage you to clone and rename this project to use for your purposes. Or you can simple use the deployed link mentioned below.
 
 * Clone or download the repository to your local machine.
 ## Install
