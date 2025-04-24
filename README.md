@@ -51,10 +51,7 @@ https://user-images.githubusercontent.com/112818778/222410169-9e8b9bba-c6e6-403d
 
 
 
-## Deployment
 
-The deployed link of the project:
-#### https://fine-cyan-hummingbird-cuff.cyclic.app/
 
 ## Contributions
 
