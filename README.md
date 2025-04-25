@@ -41,6 +41,10 @@ Limit: /api/products?limit=3
 
 ## Demo
 
+[Live](https://rest-api-s810.onrender.com/)
+
+[Swagger UI](https://rest-api-s810.onrender.com/api-docs/)
+
 A short video demo of the complete project:
 
 

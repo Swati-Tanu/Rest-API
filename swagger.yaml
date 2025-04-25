@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   description: |
     This is a backend API built with Express.js and MongoDB that provides access to a product database.
-    
+
     It supports flexible querying capabilities including:
     - **Filtering** products by fields like `company`, `name`, and `featured` status
     - **Sorting** results by one or more fields
@@ -23,7 +23,7 @@ info:
     > For documentation and testing, visit the Swagger UI at `/api-docs` when the server is running.
 
 servers:
-  - url: http://localhost:5000
+  - url: https://rest-api-s810.onrender.com/
 
 paths:
   /:
