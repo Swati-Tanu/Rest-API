@@ -1,17 +1,17 @@
 require("dotenv").config();
 const connectDB = require("./db/connect");
 const Product = require("./models/products");
-const ProductJSON = require("./products.json")
+const ProductJSON = require("./products.json");
 
-const start = async () => {
-    try{
-        await connectDB(process.env.MONGODB_URL);
-        await Product.deleteMany();
-        await Product.create(ProductJSON);
-        console.log("All products");
-    } catch (err){
-        console.log(err);
-    }
-}
+const uploadProducts = async () => {
+  try {
+    //? Deleteing all docs before inserting to avoid duplicacy of data.
+    await Product.deleteMany();
+    await Product.create(ProductJSON);
+    console.log("All products");
+  } catch (err) {
+    console.log(err);
+  }
+};
 
-start();
+module.exports = { uploadProducts };

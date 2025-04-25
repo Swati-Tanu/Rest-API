@@ -1,0 +1,120 @@
+openapi: 3.0.0
+info:
+  title: Products API
+  version: 1.0.0
+  description: |
+    This is a backend API built with Express.js and MongoDB that provides access to a product database.
+    
+    It supports flexible querying capabilities including:
+    - **Filtering** products by fields like `company`, `name`, and `featured` status
+    - **Sorting** results by one or more fields
+    - **Selecting** specific fields to return for better performance
+    - **Pagination** to handle large data sets efficiently
+
+    ### Available Endpoints:
+    - `GET /` – Health check route to ensure the server is running
+    - `GET /api/products` – Retrieve product data with query support
+    - `GET /api/products/testing` – A simplified testing endpoint for previewing selected product fields
+
+    This API is ideal for developers building e-commerce platforms, dashboards, or internal tools that require dynamic product querying and filtering.
+
+    All responses are returned in JSON format and include helpful metadata like `nHits` for result count.
+
+    > For documentation and testing, visit the Swagger UI at `/api-docs` when the server is running.
+
+servers:
+  - url: http://localhost:5000
+
+paths:
+  /:
+    get:
+      summary: Home route
+      responses:
+        "200":
+          description: Home Page from Backend Side
+          content:
+            text/plain:
+              example: Home Page from Backend Side
+        "500":
+          description: Internal Server Error
+
+  /api/products:
+    get:
+      summary: Get all products with filters, sorting, and pagination
+      parameters:
+        - in: query
+          name: company
+          schema:
+            type: string
+        - in: query
+          name: name
+          schema:
+            type: string
+        - in: query
+          name: featured
+          schema:
+            type: string
+        - in: query
+          name: sort
+          schema:
+            type: string
+        - in: query
+          name: select
+          schema:
+            type: string
+        - in: query
+          name: page
+          schema:
+            type: integer
+        - in: query
+          name: limit
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: A list of products
+          content:
+            application/json:
+              example:
+                Products:
+                  - _id: "680b201dd1000868832f2e08"
+                    name: "s5"
+                    price: 400
+                    featured: false
+                    rating: 4.9
+                    createdAt: "2025-04-25T05:39:38.615Z"
+                    company: "samsung"
+                    __v: 0
+                  - _id: "680b201dd1000868832f2e05"
+                    name: "iphone7"
+                    price: 1154
+                    featured: true
+                    rating: 4.9
+                    createdAt: "2025-04-25T05:39:38.615Z"
+                    company: "apple"
+                    __v: 0
+                nHits: 2
+        "400":
+          description: Bad Request (Invalid query or filter parameters)
+        "500":
+          description: Internal Server Error
+
+  /api/products/testing:
+    get:
+      summary: Get all products (test route)
+      responses:
+        "200":
+          description: Test route response with limited product fields
+          content:
+            application/json:
+              example:
+                myData:
+                  - _id: "680b201dd1000868832f2dfc"
+                    name: "iphone10"
+                    company: "apple"
+                  - _id: "680b201dd1000868832f2dfb"
+                    name: "iphone"
+                    company: "apple"
+                nHits: 2
+        "500":
+          description: Internal Server Error
