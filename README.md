@@ -45,6 +45,9 @@ Limit: /api/products?limit=3
 
 [Swagger UI](https://rest-api-s810.onrender.com/api-docs/)
 
+[Postman Collection](https://github.com/user-attachments/files/19903851/RestAPI.postman_collection.json)
+
+
 A short video demo of the complete project:
 
 
